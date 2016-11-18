@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.20)  18 NOV 2016 02:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.20)  18 NOV 2016 03:32
 entering extended mode
 **Principal.tex
 (C:\Users\MAGO_PC\Desktop\TesisUC\TesisUC\Principal.tex
@@ -1574,7 +1574,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count354
 
-<Figuras/UC.png, id=50, 347.04657pt x 450.9347pt>
+<Figuras/UC.png, id=58, 347.04657pt x 450.9347pt>
 File: Figuras/UC.png Graphic file (type png)
  <use Figuras/UC.png>
 Package pdftex.def Info: Figuras/UC.png used on input line 73.
@@ -1594,7 +1594,7 @@ LaTeX Font Info:    Try loading font information for U+zeuex on input line 73.
 (C:\Users\MAGO_PC\AppData\Roaming\MiKTeX\2.9\tex\latex\eulervm\uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-<Figuras/ing.pdf, id=52, 190.7125pt x 128.48pt>
+<Figuras/ing.pdf, id=60, 190.7125pt x 128.48pt>
 File: Figuras/ing.pdf Graphic file (type pdf)
  <use Figuras/ing.pdf>
 Package pdftex.def Info: Figuras/ing.pdf used on input line 73.
@@ -1730,14 +1730,22 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 [1
 
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+
+ []
+
+LaTeX Info: Redefining \sptext on input line 34.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+[2])
 
 LaTeX Warning: Empty bibliography on input line 177.
 
 LaTeX Info: Redefining \sptext on input line 180.
 LaTeX Info: Redefining \. on input line 180.
 LaTeX Info: Redefining \% on input line 180.
-[2]
+[3]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (C:\Users\MAGO_PC\Desktop\TesisUC\TesisUC\Principal.aux
@@ -1747,44 +1755,34 @@ LaTeX Info: Redefining \% on input line 31.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
-
-
-Package rerunfilecheck Warning: File `Principal.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Principal.out':
-(rerunfilecheck)             Before: 0EBAE6A7A86A665E3C65F337720E01A3;1485
-(rerunfilecheck)             After:  FD0E2FC07F8A0C31CFB873531822B64F;1863.
+Package rerunfilecheck Info: File `Principal.out' has not changed.
+(rerunfilecheck)             Checksum: FD0E2FC07F8A0C31CFB873531822B64F;1863.
 Package logreq Info: Writing requests to 'Principal.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 32680 strings out of 493887
- 585970 string characters out of 3146759
+ 32685 strings out of 493887
+ 586028 string characters out of 3146759
  837262 words of memory out of 3000000
- 35391 multiletter control sequences out of 15000+200000
- 53161 words of font info for 87 fonts, out of 3000000 for 9000
+ 35394 multiletter control sequences out of 15000+200000
+ 54714 words of font info for 89 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 69i,11n,67p,1026b,1793s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.21} has been referenced but does not exis
-t, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\MAGO_PC
-\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\U
-sers\MAGO_PC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm10
-95.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Users/MAGO_PC/AppDat
-a/Roaming/MiKTeX/2.9/fonts/type1/bera/fvsr8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr
-8a.pfb>
-Output written on Principal.pdf (20 pages, 305389 bytes).
+ 69i,11n,67p,1061b,1791s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\MAGO_
+PC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:
+\Users\MAGO_PC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm
+1095.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Users/MAGO_PC/AppD
+ata/Roaming/MiKTeX/2.9/fonts/type1/bera/fvsr8a.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/up
+lr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Principal.pdf (21 pages, 318241 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
+ 254 PDF objects out of 1000 (max. 8388607)
  45 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
