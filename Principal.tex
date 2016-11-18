@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Proyecto Especial de Grado para UC Ing. en Telecomunicaciones 
+% Plantilla LaTeX
+% Version 1.4 (28/11/15)
+%
+% Esta plantilla fue descargada desde:
+% http://www.latextemplates.com
+%
+% Autores Originales:
+% Steven Gunn 
+% http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/
+% y
+% Sunil Patel
+% http://www.sunilpatel.co.uk/thesis-template/
+%
+% Modificaciones, Adaptaciones y Traducción:
+% Carlos Mejías
+% Ahmad Osman
+%
+%
+% Licencia:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PAQUETES Y OTRAS CONFIGURACIONES DEL DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,twoside]{Project} % Tamaño de la fuente, tamaño de la hoja con opción doble cara.
+
+\graphicspath{{Figuras/}} % Especificación del directorio donde se encuentran almacenadas las imágenes
+
+\title{\ttitle} % Define el título del Proyecto Especial de Grado - NO MODIFICAR.
+
+\begin {document}
+
+\renewcommand{\thelstlisting}{\arabic{chapter}.\arabic{lstlisting}} % Define el formato del caption de los códigos. - NO MODIFICAR -
+
+\frontmatter % Numeración romana (i, ii, iii, iv...) para las páginas de pre-contenido. NO MODIFICAR
+%
+\setstretch{1.4} % Interlineado - NO MODIFICAR
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES DEL DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\titulo{Título del Proyecto Especial de Grado} % Título de su Proyecto Especial de Grado. Este título se utiliza tambien en el resumen
+%-------------------------------------------------  
+\tutor{Nombre del Tutor} % Nombre del tutor - Utilizado en una de las portadas y resumen
+%-------------------------------------------------   
+% En caso de que sea un sólo autor comente los comandos \autorII, \cedulaII y \tlfII
+%-------------------------------------------------
+\autorI{Nombre del Autor 1}  % Nombre del 1er autor
+\cedulaI{11.111.111}         % C.I del 1er autor
+\tlfI{5555-5555555}
+\autorII{Nombre del Autor 2} % Nombre del 2do autor 
+\cedulaII{22.222.222}        % C.I del 2do autor
+\tlfII{6666-6666666}
+%-------------------------------------------------
+\keywords{Clave1, Clave2, Clave3} % Palabras Claves - Utilizado en el resumen citado con \keywordnames
+%-------------------------------------------------   
+\departmento{Señales y Sistemas}  % Nombre del Departamento
+%-------------------------------------------------                
+\grupo{Laboratorio X}  % Incluya el Nombre del Centro o Laboratorio de  
+                       % si Investigaciónel Trabajo Especial de Grado fue desarrollado                                     
+                       % en dicho centro. De lo contrario deje \grupo{}
+
+
+%----------------------------------------------------------------------------------------
+%	PORTADAS
+%----------------------------------------------------------------------------------------
+\solicitud     % Incluye primera Portada requisito para introducir el proyecto.
+\portada       % Incluye Portada Principal
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	ÍNDICE GENERAL/ DE FIGURAS/ DE TABLAS / DE CÓDIGOS
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Define los encabezados "fancy" - NO MODIFICAR -
+
+\tableofcontents % Incluye el índice general 
+
+\listoffigures % Incluye el índice de figuras. NOTA: SI EL PROYECTO NO TIENE FIGURAS, DESACTIVE ESTE INDICE.
+
+\listoftables % Incluye el índice de tablas. NOTA: SI EL PROYECTO NO TIENE TABLAS, DESACTIVE ESTE INDICE.
+
+%----------------------------------------------------------------------------------------
+%	LISTA DE ACRÓNIMOS
+%----------------------------------------------------------------------------------------
+
+% Recuerde ordenar la Lista de Acrónimos en orden alfabético
+
+\listofsymbols{ll} % Incluye una lista de Acrónimos (Tabla de dos columnas)
+{
+\textbf{DSP} & \textbf{D}igital \textbf{S}ignal \textbf{P}rocessing \\
+\textbf{LED} & \textbf{L}ight-\textbf{E}mitting \textbf{D}iode \\
+\textbf{UC} & \textbf{U}niversidad de \textbf{C}arabobo \\
+\textbf{OPSU} & \textbf{O}ficina de \textbf{P}lanificación del \textbf{S}ector \textbf{U}niversitario  \\
+%\textbf{Acronimo} & \textbf{C}ual \textbf{E}s \textbf{S}u \textbf{S}ignificado \\
+}
+
+%----------------------------------------------------------------------------------------
+%	CONSTANTES FÍSICAS/ OTRAS DEFINICIONES
+%----------------------------------------------------------------------------------------
+
+% Utiliza esta sección para mostrar las constantes físicas u otras definiciones importantes
+% EN CASO DE QUE TU PROYECTO NO NECESITE NINGUNRA DEFINICIÓN, COMENTA ESTA SECCIÓN.
+
+\listofconstants{lrcl} % Incluye una lista de constantes físicas y otras definiciones 
+% (Tabla de 4 columnas)
+{
+Velocidad de la luz & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{1}}$\\
+Permitividad eléctrica (Vacío) & $\epsilon_0$ & $=$ & $8.854\ldots\times10^{-12}\ \mbox{Fm}^{-1}$ \\
+Permeabilidad magnética (Vacío) & $\mu_0$ & $=$ & $4\pi\times10^{-7}\ \mbox{NA}^{-2}$ \\
+% Nombre Constante & Símbolo & $=$ & Valor Constante \ Unidades \\
+}
+
+%----------------------------------------------------------------------------------------
+%	SÍMBOLOS
+%----------------------------------------------------------------------------------------
+
+% En esta sección vas a mostrar la simbología utilizada en el Proyecto. 
+% EN CASO DE QUE TU PROYECTO NO NECESITE NINGUNRA SIMBOLOGÍA ESPECIAL, COMENTA ESTA SECCIÓN.
+
+\listofnomenclature{lll} % Incluye una lista de símbolos (Tabla de tres columnas)
+{
+$F_s$ & Frecuencia de muestreo & Hz \\
+$P_{in} $ & Potencia de entrada & W (Js$^{-1}$) \\
+$I $ & Corriente & A \\
+% Symbol & Name & Unit \\
+
+& & \\ % Gap to separate the Roman symbols from the Greek
+
+$\omega$ & Frecuencia angular & rads$^{-1}$ \\
+$\Phi_{xx}$ & Densidad espectral de potencia & (WHz$^{-1}$) \\
+% Symbol & Name & Unit \\
+}
+
+%----------------------------------------------------------------------------------------
+%	RESUMEN
+%----------------------------------------------------------------------------------------
+
+\abstract{
+
+El resumen debe describir claramente el problema de la investigación, el objetivo principal propuesto, la importancia o el aporte de la investigación y la planificación del abordaje metodológico propuesto. Debe tener máximo 250 palabras. Incluir, al final del resumen, palabras claves que definan su proyecto. Las palabras claves no se cuentan dentro de las 250 palabras\ldots
+
+}
+
+%----------------------------------------------------------------------------------------
+%	CAPÍTULOS DEL PROYECTO ESPECIAL DE GRADO
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Comienza la numeración de página (1,2,3...)
+
+\pagestyle{fancy} % Configura nuevamente los encabezados "fancy"
+
+% Incluya los capítulos del Proyecto Especial de Grado, separados en diferentes archivos e incluidos en una carpeta llamada Capítulos
+% Descomente las líneas para incluir los diferentes capítulos
+
+% Capítulos del Proyecto de Trabajo Especial de Grado
+
+\input{Capitulos/Plantilla} % Este capítulo contiene toda la información para generar el instructivo. - CUANDO REALICE EL PROYECTO DESACTIVE (COMENTE) ESTA LÍNEA DE COMANDO Y ACTIVE LOS COMANDO CORRESPONDIENTES A CADA CAPÍTULO-.
+
+%\input{Capitulos/Capitulo1} % El problema
+
+%\input{Capitulos/Capitulo2} % Marco Conceptual
+ 
+%\input{Capitulos/Capitulo3} % Procedimiento Metodológico
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCIAS BIBLIOGRÁFICAS
+%----------------------------------------------------------------------------------------
+
+\printbibliography
+
+%----------------------------------------------------------------------------------------
+\end {document}  

@@ -1,0 +1,131 @@
+% Capítulo 3
+
+\chapter{Procedimiento Metodológico} % Título Principal del Capítulo
+
+\label{Capitulo3} % Para hacer referenciar este capítudo use \ref{Capitulo3}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Main Section 1}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Subsection 1}
+
+Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Subsection 2}
+Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Cronograma de Actividades}
+
+\begin{figure}
+\centering
+%------------------------------------------------
+%Definiciones Básicas (NO MODIFICAR)
+%------------------------------------------------
+
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+%\renewcommand\sfdefault{phv}
+\setganttlinklabel{s-s}{Inicio-Inicio}
+\setganttlinklabel{f-s}{Inicio-Final}
+\setganttlinklabel{f-f}{Final-Final}
+\sffamily
+\begin{ganttchart}[
+%------------------------------------------------
+%Encabezado de diagrama (NO MODIFICAR)
+%------------------------------------------------
+canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+hgrid style/.style={draw=black!5, line width=.75pt},
+vgrid={*1{draw=black!5, line width=.75pt}},
+today=7,  % En este comando se indica el mes en el que se entrega el Proyecto. En caso de que ninguna actividad haya comenzado en el momento de la entrega, desactive (comente) esta línea.  
+today rule/.style={
+draw=black!64,
+dash pattern=on 3.5pt off 4.5pt,
+line width=1.5pt
+},
+today label font=\small\bfseries,
+title/.style={draw=none, fill=none},
+title label font=\bfseries\footnotesize,
+title label node/.append style={below=7pt},
+include title in canvas=false,
+bar label font=\small\color{black!70},
+bar label node/.append style={left=2cm},
+bar/.append style={draw=none, fill=black!63},
+bar incomplete/.append style={fill=barblue},
+bar progress label font=\footnotesize\color{black!70},
+group incomplete/.append style={fill=groupblue},
+group left shift=0,
+group right shift=0,
+group height=.5,
+group peaks tip position=0,
+group label node/.append style={left=.6cm},
+group progress label font=\bfseries\small,
+link/.style={-latex, line width=1.5pt, linkred},
+link label font=\scriptsize\bfseries,
+link label node/.append style={below left=-2pt and 0pt}
+]{1}{12}
+%----------------------------------------------------------
+%Fin del Encabezado de diagrama
+%---------------------------------------------------------
+% A partir de esta linea Ud podrá editar las lineas que aparezcan
+%comentadas para adaptar el diagrama de gantt a sus requerimientos
+
+\gantttitle[
+title label node/.append style={below left=7pt and -3pt}
+]{Meses:\quad1}{1}
+\gantttitlelist{2,...,12}{1} \\ % Número de meses.
+%Si desea mas especificidad en la fecha, modifique el comando anterior.
+\ganttgroup[progress=57]{Revisi\'{o}n Te\'{o}rica}{1}{10} \\%Porcentaje
+% de completitud del grupo de actividades.
+\ganttbar[
+progress=75,% Porcentaje de completitud de la actividad
+name=WBS1A
+]{Actividad A}{1}{8} \\%Coloque acá la primera 1ra actividad a realizar
+% y su duración.
+\ganttbar[
+progress=67,% Porcentaje de completitud de la actividad
+name=WBS1B
+]{Actividad B}{1}{3} \\%Coloque acá la segunda 2da actividad a realizar
+%y su duración.
+\ganttbar[
+progress=50,% Porcentaje de completitud de la actividad
+name=WBS1C
+]{Actividad C}{4}{10} \\%Coloque acá la tercera 3ra actividad a realizar
+%y su duración.
+\ganttbar[
+progress=0,% Porcentaje de completitud de la actividad
+name=WBS1D
+]{Actividad D}{4}{10} \\[grid]%Coloque acá la 4ta actividad actividad a
+% realizar y su duración.
+\ganttgroup[progress=0]{Implementaci\'{o}n}{4}{10} \\% Porcentaje 
+%de completitud del grupo de actividades.
+\ganttbar[progress=0]{Actividad E}{4}{5} \\%Coloque acá la 5ta actividad a realizar y su duración.
+\ganttbar[progress=0]{Actividad F}{6}{8} \\%Coloque acá la 6ta actividad a a realizar y su duración.
+\ganttbar[progress=0]{Actividad G}{9}{10}%Coloque acá la primera 7ma actividad a realizar y su duración.
+\ganttlink[link type=s-s]{WBS1A}{WBS1B} % Esto permite enlazar dichas actividades con los conectores inicio-inicio (s-s), final-inicio (f-s) o final-final (f-f)
+\ganttlink[link type=f-s]{WBS1B}{WBS1C}
+\ganttlink[
+link type=f-f,
+link label node/.append style=left
+]{WBS1C}{WBS1D}
+\end{ganttchart}
+
+\caption{Diagrama de Gantt con indicadores y enlaces}
+\label{GanttFig}
+\end{figure}
