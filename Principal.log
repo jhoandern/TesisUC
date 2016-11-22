@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.20)  18 NOV 2016 03:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.20)  21 NOV 2016 23:56
 entering extended mode
 **Principal.tex
 (C:\Users\MAGO_PC\Desktop\TesisUC\TesisUC\Principal.tex
@@ -1727,25 +1727,34 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 11.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
 [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 21--25
+LaTeX Info: Redefining \sptext on input line 23.
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
 
  []
 
-LaTeX Info: Redefining \sptext on input line 34.
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
-[2])
+LaTeX Info: Redefining \sptext on input line 39.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+[3])
 
 LaTeX Warning: Empty bibliography on input line 177.
 
 LaTeX Info: Redefining \sptext on input line 180.
 LaTeX Info: Redefining \. on input line 180.
 LaTeX Info: Redefining \% on input line 180.
-[3]
+[4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (C:\Users\MAGO_PC\Desktop\TesisUC\TesisUC\Principal.aux
@@ -1761,13 +1770,13 @@ Package logreq Info: Writing requests to 'Principal.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 32685 strings out of 493887
- 586028 string characters out of 3146759
- 837262 words of memory out of 3000000
+ 32686 strings out of 493887
+ 586035 string characters out of 3146759
+ 837263 words of memory out of 3000000
  35394 multiletter control sequences out of 15000+200000
  54714 words of font info for 89 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 69i,11n,67p,1061b,1791s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,11n,67p,1120b,1789s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\MAGO_
 PC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:
 \Users\MAGO_PC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm
@@ -1780,9 +1789,9 @@ ata/Roaming/MiKTeX/2.9/fonts/type1/bera/fvsr8a.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/up
 lr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Principal.pdf (21 pages, 318241 bytes).
+Output written on Principal.pdf (22 pages, 319732 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
+ 258 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
